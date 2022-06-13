@@ -45,7 +45,7 @@
 
 <h2>Examples</h2>
 
-<details>
+<details open="open">
   <summary>Orphan instance in a separate module from definitions</summary>
   <div class="example-container">
     <p>In this example, the implementation for <code>IsAFoo Foo</code> is in a different module than both the definition for <code>class IsAFoo</code> and the datatype <code>Foo</code>. Thus, it would be possible for a user to write <code>import Foo</code> and expect to have <code>instance IsAFoo Foo</code> in scope; however, the user would need to additionally import <code>module OrphanInstance</code>.</p>

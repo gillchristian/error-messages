@@ -43,7 +43,7 @@
 
 <h2>Examples</h2>
 
-<details>
+<details open="open">
   <summary>Export item suggests constructors/methods</summary>
   <div class="example-container">
     <p>When re-exporting <code>TypeWithoutVisibleCtrs</code> <em>originally imported</em> from <code>module HiddenCtrs</code> and then <em>re-exported</em> in <code>module DodgyExports</code>, the export list item suggests that this type has associated in-scope constructor(s). However it does not (the constructors are out of scope). The same is true of <code>TypeWithNoCtrs</code>; the export item suggests it has constructors whereas it has none (either in or out of scope).</p>

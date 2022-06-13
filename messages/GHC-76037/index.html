@@ -36,7 +36,7 @@
 
 <h2>Examples</h2>
 
-<details>
+<details open="open">
   <summary>Unbound data constructor in lambda</summary>
   <div class="example-container">
     <p>The data constructor <code>A</code> used in the lambda expression is not in scope.</p>
@@ -77,7 +77,7 @@ f = \A -> A
   </div>
 </details>
 
-<details>
+<details open="open">
   <summary>Unbound class name</summary>
   <div class="example-container">
     <p>The class name <code>B</code> referenced in the definition of class <code>C</code> is not in scope.</p>
@@ -120,7 +120,7 @@ class (B a) => C a where
   </div>
 </details>
 
-<details>
+<details open="open">
   <summary>Data constructor not imported</summary>
   <div class="example-container">
     <p>The import statement <code>import Foo (Bar)</code> imports the <code>Bar</code> data type, but no its constructor <code>MkBar</code>.

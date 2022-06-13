@@ -37,7 +37,7 @@ If a type variables is instead inferred, i.e. the type is not annotated or the 
 
 <h2>Examples</h2>
 
-<details>
+<details open="open">
   <summary>Type application with type variable marked as inferred</summary>
   <div class="example-container">
     <p>The type annotation <code>forall {k} ...</code> of <code>C</code> marks the type variable <code>k</code> as inferred with the surrounding braces.
@@ -99,7 +99,7 @@ bar = let x = C @Type @Int Proxy
   </div>
 </details>
 
-<details>
+<details open="open">
   <summary>Type application with no type variable</summary>
   <div class="example-container">
     <p>The function <code>plus</code> is applied to the type argument <code>Int</code>, but its annotated type <code>Int -&gt; Int -&gt; Int</code> contains no type variable.</p>
@@ -150,7 +150,7 @@ x = plus 5 7
   </div>
 </details>
 
-<details>
+<details open="open">
   <summary>Type application with non-annotated expression</summary>
   <div class="example-container">
     <p>The lambda expression <code>(\x -&gt; x)</code> has no type annotation, thus the application to the type argument <code>Int</code> is forbidden.
