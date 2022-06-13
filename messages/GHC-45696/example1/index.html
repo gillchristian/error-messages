@@ -1,4 +1,4 @@
-<p>When pattern matching, <code>(if .. then .. else)</code> blocks are not allowed as expressions to be pattern matched against.</p>
+<p>When pattern matching, <code>(if .. then .. else)</code> expressions are not allowed as patterns to be matched against.</p>
 <p>In this example, if <code>a</code> is <code>True</code> then we want to pattern match <code>b</code> to <code>"something"</code>; if <code>a</code> is <code>False</code>, we want to pattern match <code>b</code> with <code>"something else"</code> instead. For instance, <code>f True "something else"</code> is <code>False</code> and <code>f False "something else"</code> is <code>True</code>.</p>
 <p>However we cannot use an <code>if</code> expression within a pattern match; the solution can be to either to match on a tuple of <code>(a, b)</code> or to move the <code>if</code> expression outside of the pattern.</p>
 <h2 id="error-message">Error Message</h2>
